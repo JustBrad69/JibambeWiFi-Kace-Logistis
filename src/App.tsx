@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Packages from './components/Packages';
 import CoverageArea from './components/CoverageArea';
 import PaymentInfo from './components/PaymentInfo';
+import HelpSupport from './components/HelpSupport';
 import Footer from './components/Footer';
 import WhatsAppWidget from './components/WhatsAppWidget';
 import WifiNotification from './components/WifiNotification';
@@ -30,11 +31,10 @@ function App() {
         <Packages />
         <CoverageArea />
         <PaymentInfo />
+        <HelpSupport />
       </main>
       <Footer />
       <WhatsAppWidget />
     </div>
   );
 }
-
-export default App;
