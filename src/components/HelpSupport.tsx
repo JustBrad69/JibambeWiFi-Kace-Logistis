@@ -28,6 +28,7 @@ const HelpSupport = () => {
   return (
     <>
       <button
+        id="help-support-button"
         onClick={() => setIsOpen(true)}
         className="fixed bottom-20 right-5 z-40 bg-[#000080] hover:bg-[#000060] text-white rounded-full p-4 shadow-lg transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#000080]"
         aria-label="Open Help & Support"
@@ -103,6 +104,11 @@ const HelpSupport = () => {
                           💡 Always confirm you're sending payment to the official Till Number listed on our site.
                         </p>
                       </div>
+
+                      <h3 className="text-xl font-semibold">Do I need to register a device to access the internet?</h3>
+                      <p className="text-gray-700">
+                        No. Once you pay using the Till Number, your access is automatically granted without needing to link or register your device manually.
+                      </p>
                     </div>
                   </section>
 
@@ -121,6 +127,11 @@ const HelpSupport = () => {
                         <li>Online classes</li>
                         <li>Social media and general browsing</li>
                       </ul>
+
+                      <h3 className="text-xl font-semibold">Is the connection stable for online meetings or classes?</h3>
+                      <p className="text-gray-700">
+                        Yes. Jibambe WiFi is tested and tuned for consistent performance during video calls and remote work.
+                      </p>
                     </div>
                   </section>
 
@@ -136,6 +147,11 @@ const HelpSupport = () => {
                         <li>Check if your access time or daily data limit has expired.</li>
                         <li>If the issue persists, contact our support team.</li>
                       </ul>
+
+                      <h3 className="text-xl font-semibold">How can I check my usage or time remaining?</h3>
+                      <p className="text-gray-700">
+                        Currently, usage tracking is not available on the website. We recommend noting your start time manually for now. Future updates may include automated access logs.
+                      </p>
                     </div>
                   </section>
 
@@ -144,6 +160,14 @@ const HelpSupport = () => {
                       📧 CUSTOMER SUPPORT
                     </h2>
                     <div className="mt-4 space-y-4">
+                      <h3 className="text-xl font-semibold">How can I reach support?</h3>
+                      <p className="text-gray-700">If you experience issues or need help, you can:</p>
+                      <ul className="list-disc pl-5 text-gray-700">
+                        <li>Use the contact form on the website</li>
+                        <li>Email us via our official business email</li>
+                        <li>Chat with us through the support option on the homepage</li>
+                      </ul>
+
                       <h3 className="text-xl font-semibold">Support Hours:</h3>
                       <div className="bg-gray-50 p-4 rounded-lg">
                         <p className="text-gray-700">
@@ -158,18 +182,36 @@ const HelpSupport = () => {
                     <h2 className="text-2xl font-bold text-[#000080] flex items-center gap-2">
                       🔒 SECURITY & PRIVACY
                     </h2>
-                    <p className="text-gray-700 mt-4">
-                      We use secure routing to ensure that your browsing experience is private and reliable. We do not share user data with third parties.
-                    </p>
+                    <div className="mt-4">
+                      <h3 className="text-xl font-semibold">Is my data safe when I use Jibambe WiFi?</h3>
+                      <p className="text-gray-700">
+                        Yes. We use secure routing to ensure that your browsing experience is private and reliable. We do not share user data with third parties.
+                      </p>
+                    </div>
                   </section>
 
                   <section>
                     <h2 className="text-2xl font-bold text-[#000080] flex items-center gap-2">
                       🔄 SERVICE UPDATES
                     </h2>
-                    <p className="text-gray-700 mt-4">
-                      Scheduled maintenance or updates will be announced on the website homepage. Urgent service interruptions will also be posted via email or notification banners on the site.
-                    </p>
+                    <div className="mt-4">
+                      <h3 className="text-xl font-semibold">How will I know if the service is down or under maintenance?</h3>
+                      <p className="text-gray-700">
+                        Scheduled maintenance or updates will be announced on the website homepage. Urgent service interruptions will also be posted via email or notification banners on the site.
+                      </p>
+                    </div>
+                  </section>
+
+                  <section>
+                    <h2 className="text-2xl font-bold text-[#000080] flex items-center gap-2">
+                      📍 COVERAGE
+                    </h2>
+                    <div className="mt-4">
+                      <h3 className="text-xl font-semibold">Where is Jibambe WiFi available?</h3>
+                      <p className="text-gray-700">
+                        Jibambe WiFi currently serves select areas. Coverage expansion is ongoing. Visit the homepage or contact us to confirm availability in your area.
+                      </p>
+                    </div>
                   </section>
                 </div>
               </div>
