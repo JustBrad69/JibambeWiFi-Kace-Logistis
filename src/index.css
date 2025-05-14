@@ -7,6 +7,19 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes slideIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.modal-overlay {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.modal-content {
+  animation: slideIn 0.3s ease-out;
+}
+
 .animate-fade-in {
   animation: fadeIn 0.3s ease-out;
 }
@@ -22,4 +35,32 @@ body {
 
 .hover-grow:hover {
   transform: scale(1.05);
+}
+
+/* Modal styles */
+.modal-backdrop {
+  backdrop-filter: blur(4px);
+}
+
+.modal-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #CBD5E0 #EDF2F7;
+}
+
+.modal-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-scroll::-webkit-scrollbar-track {
+  background: #EDF2F7;
+  border-radius: 4px;
+}
+
+.modal-scroll::-webkit-scrollbar-thumb {
+  background: #CBD5E0;
+  border-radius: 4px;
+}
+
+.modal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #A0AEC0;
 }
