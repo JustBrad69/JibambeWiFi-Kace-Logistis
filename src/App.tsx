@@ -7,7 +7,6 @@ import PaymentInfo from './components/PaymentInfo';
 import HelpSupport from './components/HelpSupport';
 import Footer from './components/Footer';
 import WhatsAppWidget from './components/WhatsAppWidget';
-import WifiNotification from './components/WifiNotification';
 
 function App() {
   return (
@@ -27,7 +26,6 @@ function App() {
       <Header />
       <main id="main-content" className="flex-grow relative z-10">
         <Hero />
-        <WifiNotification />
         <Packages />
         <CoverageArea />
         <PaymentInfo />
