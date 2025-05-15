@@ -64,3 +64,8 @@ body {
 .modal-scroll::-webkit-scrollbar-thumb:hover {
   background: #A0AEC0;
 }
+
+/* Hide help widget while keeping WhatsApp widget visible */
+#help-support-button {
+  display: none !important;
+}
