@@ -58,7 +58,7 @@ const PaymentInfo = () => {
               <PhoneCall className="h-6 w-6 text-[#000080] mr-3" />
               <h3 className="text-xl font-semibold text-[#000080]">Call or WhatsApp</h3>
             </div>
-            <p className="text-gray-700 mb-4">For support or inquiries, contact us via phone or WhatsApp:</p>
+            <p className="text-gray-700 mb-4">Reach out to finalise your package. For support or inquiries, contact us via phone or WhatsApp:</p>
             <a href="tel:0707374749" className="text-xl font-bold text-[#000080] hover:underline">0707374749</a>
           </div>
           
@@ -67,7 +67,7 @@ const PaymentInfo = () => {
               <Mail className="h-6 w-6 text-[#000080] mr-3" />
               <h3 className="text-xl font-semibold text-[#000080]">Email Us</h3>
             </div>
-            <p className="text-gray-700 mb-4">For business inquiries or support tickets, email us at:</p>
+            <p className="text-gray-700 mb-4">Reach out to finalise your package. For business inquiries or support tickets, email us at:</p>
             <a href="mailto:info@kacelogisticsltd.com" className="text-lg font-bold text-[#000080] hover:underline break-all">info@kacelogisticsltd.com</a>
           </div>
         </div>

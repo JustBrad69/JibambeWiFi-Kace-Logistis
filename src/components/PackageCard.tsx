@@ -41,9 +41,12 @@ const PackageCard: React.FC<PackageProps> = ({ packageData }) => {
           </div>
         </div>
         
-        <button className="w-full py-2 rounded-full font-semibold bg-[#000080] hover:bg-[#000060] text-white transition-colors">
+        <a 
+          href="#contact"
+          className="block w-full py-2 rounded-full font-semibold bg-[#000080] hover:bg-[#000060] text-white transition-colors text-center"
+        >
           GET STARTED
-        </button>
+        </a>
       </div>
     </div>
   );
