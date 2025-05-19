@@ -74,7 +74,7 @@ body {
 .vfrc-widget {
   position: fixed !important;
   bottom: 20px !important;
-  right: 20px !important;
+  left: 20px !important;
   z-index: 100 !important;
   width: 60px !important;
   height: 60px !important;
@@ -89,7 +89,7 @@ body {
 .fixed.bottom-5.right-5 {
   position: fixed !important;
   bottom: 20px !important;
-  right: 100px !important;
+  right: 20px !important;
   z-index: 99 !important;
 }
 
