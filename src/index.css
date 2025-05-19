@@ -70,7 +70,13 @@ body {
   display: none !important;
 }
 
-/* Ensure Voiceflow widget doesn't overlap with WhatsApp widget */
+/* Position Voiceflow widget above WhatsApp widget */
 .vfrc-widget {
-  bottom: 80px !important;
+  bottom: 100px !important;
+  right: 20px !important;
+}
+
+/* Ensure WhatsApp widget stays at the bottom */
+.vfrc-widget ~ div {
+  bottom: 20px !important;
 }
