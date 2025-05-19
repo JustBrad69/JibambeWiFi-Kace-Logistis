@@ -1,5 +1,20 @@
 import React, { useEffect } from 'react';
-import { MessageCircle, X } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
+
+declare global {
+  interface Window {
+    voiceflow: {
+      chat: {
+        load: (config: {
+          verify: { projectID: string };
+          url: string;
+          versionID: string;
+          voice: { url: string };
+        }) => void;
+      };
+    };
+  }
+}
 
 const VoiceflowWidget = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -26,15 +41,19 @@ const VoiceflowWidget = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-5 left-5 z-50">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="bg-blue-500 hover:bg-blue-600 text-white rounded-full p-4 shadow-lg transition-all transform hover:scale-105"
-        style={{ width: '60px', height: '60px' }}
-      >
-        {isOpen ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
-      </button>
-    </div>
+    <button
+      onClick={() => {
+        setIsOpen(!isOpen);
+        const chatWidget = document.querySelector('.vfrc-launcher');
+        if (chatWidget) {
+          (chatWidget as HTMLElement).click();
+        }
+      }}
+      className="fixed bottom-5 right-5 z-50 bg-blue-500 hover:bg-blue-600 text-white rounded-full p-4 shadow-lg transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+      style={{ width: '60px', height: '60px' }}
+    >
+      <MessageCircle className="h-6 w-6" />
+    </button>
   );
 };
 

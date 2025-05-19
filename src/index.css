@@ -72,10 +72,9 @@ body {
 
 /* Voiceflow widget positioning */
 .vfrc-widget {
-  bottom: 100px !important;
-  right: 80px !important;
+  bottom: 80px !important;
+  right: 20px !important;
   width: 350px !important;
-  z-index: 30 !important;
 }
 
 .vfrc-launcher {
