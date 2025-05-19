@@ -45,9 +45,9 @@ const WhatsAppWidget = () => {
   return (
     <>
       {isOpen && (
-        <div className="fixed bottom-24 right-5 z-50 flex flex-col gap-3">
-          <div 
-            className="bg-white rounded-lg shadow-lg p-4 animate-fade-in cursor-pointer hover:shadow-xl transition-shadow"
+        <div className="fixed bottom-24 right-5 z-40 flex flex-col gap-3">
+          <button 
+            className="w-12 h-12 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center transition-all hover:scale-105 shadow-lg"
             onClick={() => {
               const chatWidget = document.querySelector('.vfrc-launcher');
               if (chatWidget) {
@@ -55,19 +55,15 @@ const WhatsAppWidget = () => {
               }
             }}
           >
-            <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-              <MessageCircle className="h-6 w-6 text-white" />
-            </div>
-          </div>
+            <MessageCircle className="h-6 w-6 text-white" />
+          </button>
           
-          <div 
-            className="bg-white rounded-lg shadow-lg p-4 animate-fade-in cursor-pointer hover:shadow-xl transition-shadow"
+          <button 
+            className="w-12 h-12 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center transition-all hover:scale-105 shadow-lg"
             onClick={openWhatsApp}
           >
-            <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-              <MessageCircle className="h-6 w-6 text-white" />
-            </div>
-          </div>
+            <MessageCircle className="h-6 w-6 text-white" />
+          </button>
         </div>
       )}
       
