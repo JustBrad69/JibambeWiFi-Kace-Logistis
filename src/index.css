@@ -69,3 +69,8 @@ body {
 #help-support-button {
   display: none !important;
 }
+
+/* Ensure Voiceflow widget doesn't overlap with WhatsApp widget */
+.vfrc-widget {
+  bottom: 80px !important;
+}
