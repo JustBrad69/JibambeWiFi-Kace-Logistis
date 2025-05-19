@@ -69,19 +69,3 @@ body {
 #help-support-button {
   display: none !important;
 }
-
-/* Voiceflow widget positioning */
-.vfrc-widget {
-  bottom: 80px !important;
-  right: 20px !important;
-  width: 350px !important;
-}
-
-.vfrc-launcher {
-  display: none !important;
-}
-
-/* Hide the default Voiceflow button */
-.vfrc-launcher-button {
-  display: none !important;
-}
