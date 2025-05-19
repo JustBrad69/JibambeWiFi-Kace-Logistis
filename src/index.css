@@ -70,15 +70,15 @@ body {
   display: none !important;
 }
 
-/* Position Voiceflow widget */
+/* Position Voiceflow widget on the left */
 .vfrc-widget {
   position: fixed !important;
-  bottom: 100px !important;
-  right: 24px !important;
+  bottom: 20px !important;
+  left: 24px !important;
   z-index: 49 !important;
 }
 
-/* Position WhatsApp widget */
+/* Position WhatsApp widget on the right */
 .fixed.bottom-5.right-5 {
   position: fixed !important;
   bottom: 20px !important;
