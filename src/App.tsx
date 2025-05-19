@@ -8,7 +8,6 @@ import HelpSupport from './components/HelpSupport';
 import Footer from './components/Footer';
 import WhatsAppWidget from './components/WhatsAppWidget';
 import WifiNotification from './components/WifiNotification';
-import VoiceflowWidget from './components/VoiceflowWidget';
 
 function App() {
   return (
@@ -35,10 +34,7 @@ function App() {
         <HelpSupport />
       </main>
       <Footer />
-      <VoiceflowWidget />
       <WhatsAppWidget />
     </div>
   );
 }
-
-export default App;
