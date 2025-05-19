@@ -70,18 +70,41 @@ body {
   display: none !important;
 }
 
-/* Position Voiceflow widget */
+/* Widget positioning and sizing */
 .vfrc-widget {
   position: fixed !important;
   bottom: 20px !important;
   right: 20px !important;
   z-index: 100 !important;
+  width: 60px !important;
+  height: 60px !important;
 }
 
-/* Position WhatsApp widget */
+.vfrc-widget[data-state="opened"] {
+  width: 400px !important;
+  height: 600px !important;
+}
+
+/* WhatsApp widget positioning and sizing */
 .fixed.bottom-5.right-5 {
   position: fixed !important;
   bottom: 20px !important;
-  right: 70px !important;
+  right: 100px !important;
   z-index: 99 !important;
+}
+
+/* WhatsApp button sizing to match Voiceflow */
+.fixed.bottom-5.right-5 button {
+  width: 60px !important;
+  height: 60px !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* WhatsApp chat window sizing */
+.fixed.bottom-5.right-5 div[class*="bg-white"] {
+  width: 400px !important;
+  right: 0 !important;
 }
