@@ -80,3 +80,8 @@ body {
 .vfrc-launcher {
   display: none !important;
 }
+
+/* Hide the default Voiceflow button */
+.vfrc-launcher-button {
+  display: none !important;
+}
