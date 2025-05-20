@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Search, Wifi } from 'lucide-react';
+import { Menu, X, Wifi } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,11 +15,6 @@ const Header = () => {
   }, []);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Search query:', searchQuery);
-  };
 
   return (
     <header 
@@ -47,18 +41,6 @@ const Header = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <form onSubmit={handleSearch} className="relative">
-              <input
-                type="search"
-                placeholder="Search..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500"
-                aria-label="Search"
-              />
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
-            </form>
-            
             <nav className="flex space-x-8" aria-label="Primary navigation">
               <a href="#packages" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Packages</a>
               <a href="#coverage" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Coverage</a>
@@ -81,18 +63,6 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <nav className="container mx-auto px-4 py-6" aria-label="Mobile navigation">
-            <form onSubmit={handleSearch} className="relative mb-6">
-              <input
-                type="search"
-                placeholder="Search..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500"
-                aria-label="Search"
-              />
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
-            </form>
-            
             <div className="flex flex-col space-y-4">
               <a 
                 href="#packages" 
