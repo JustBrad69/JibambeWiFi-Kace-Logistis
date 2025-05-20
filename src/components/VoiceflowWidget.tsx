@@ -21,7 +21,7 @@ const VoiceflowWidget = () => {
     script.type = 'text/javascript';
     script.onload = () => {
       window.voiceflow.chat.load({
-        verify: { projectID: '673c6d77f98e49f3930cbe7c' },
+        verify: { projectID: '68221acd619bcc0e73c0eaa0' },
         url: 'https://general-runtime.voiceflow.com',
         versionID: 'production',
         voice: {
