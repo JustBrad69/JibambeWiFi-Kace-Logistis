@@ -8,7 +8,6 @@ import HelpSupport from './components/HelpSupport';
 import Footer from './components/Footer';
 import WhatsAppWidget from './components/WhatsAppWidget';
 import WifiNotification from './components/WifiNotification';
-import TrafficChecker from './components/TrafficChecker';
 
 function App() {
   return (
@@ -35,7 +34,6 @@ function App() {
         <HelpSupport />
       </main>
       <Footer />
-      <TrafficChecker />
       <WhatsAppWidget />
     </div>
   );
