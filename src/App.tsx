@@ -8,6 +8,7 @@ import HelpSupport from './components/HelpSupport';
 import Footer from './components/Footer';
 import WhatsAppWidget from './components/WhatsAppWidget';
 import WifiNotification from './components/WifiNotification';
+import TixaeChatbot from './components/TixaeChatbot';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
       </main>
       <Footer />
       <WhatsAppWidget />
+      <TixaeChatbot />
     </div>
   );
 }
