@@ -12,6 +12,13 @@ const TixaeChatbot = () => {
         // Base TIXAE Agents CSS
         "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css",
         // Add your custom css stylesheets, Can also add relative URL ('/public/your-file.css)
+        // Custom positioning to align with WhatsApp widget
+        `
+        #VG_OVERLAY_CONTAINER .vg-widget-container {
+          bottom: 20px !important;
+          right: 20px !important;
+        }
+        `
       ],
       // THIS IS SUPPOSED TO BE CHANGED OR REMOVED.
       // user: {
