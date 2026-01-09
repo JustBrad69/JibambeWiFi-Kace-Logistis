@@ -56,10 +56,13 @@ const PaymentInfo = () => {
           <div className="bg-white rounded-lg shadow-md p-6 border border-gray-200">
             <div className="flex items-center mb-4">
               <PhoneCall className="h-6 w-6 text-[#000080] mr-3" />
-              <h3 className="text-xl font-semibold text-[#000080]">Call or WhatsApp</h3>
+              <h3 className="text-xl font-semibold text-[#000080]">Customer Care Numbers</h3>
             </div>
             <p className="text-gray-700 mb-4">Reach out to finalise your package. For support or inquiries, contact us via phone or WhatsApp:</p>
-            <a href="tel:0707374749" className="text-xl font-bold text-[#000080] hover:underline">0707374749</a>
+            <div className="space-y-3">
+              <a href="tel:+254113325179" className="text-lg font-bold text-[#000080] hover:underline block">+254113325179</a>
+              <a href="tel:+254754897775" className="text-lg font-bold text-[#000080] hover:underline block">+254754897775</a>
+            </div>
           </div>
           
           <div className="bg-white rounded-lg shadow-md p-6 border border-gray-200">

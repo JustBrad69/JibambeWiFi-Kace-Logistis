@@ -43,8 +43,8 @@ const PackageCard: React.FC<PackageProps> = ({ packageData }) => {
           </div>
         </div>
         
-        <a 
-          href="#contact"
+        <a
+          href="#payment"
           className="block w-full py-2 rounded-full font-semibold bg-[#000080] hover:bg-[#000060] text-white transition-colors text-center"
         >
           GET STARTED
