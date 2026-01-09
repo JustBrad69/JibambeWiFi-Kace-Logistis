@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Packages from './components/Packages';
+import FibrePackages from './components/FibrePackages';
 import CoverageArea from './components/CoverageArea';
 import PaymentInfo from './components/PaymentInfo';
 import HelpSupport from './components/HelpSupport';
@@ -30,6 +31,7 @@ function App() {
         <Hero />
         <WifiNotification />
         <Packages />
+        <FibrePackages />
         <CoverageArea />
         <PaymentInfo />
         <HelpSupport />

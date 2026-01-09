@@ -7,7 +7,7 @@ interface PackageProps {
     name: string;
     price: number;
     duration: string;
-    devices: number;
+    devices: number | string;
     highlight: boolean;
   };
 }
@@ -37,7 +37,9 @@ const PackageCard: React.FC<PackageProps> = ({ packageData }) => {
           
           <div className="flex items-center">
             <Users className="h-5 w-5 text-[#000080] mr-2" />
-            <span className="text-gray-700">{devices} {devices > 1 ? 'Devices' : 'Device'}</span>
+            <span className="text-gray-700">
+              {typeof devices === 'string' ? devices : `${devices} ${devices > 1 ? 'Devices' : 'Device'}`}
+            </span>
           </div>
         </div>
         
