@@ -62,6 +62,7 @@ const PaymentInfo = () => {
             <div className="space-y-3">
               <a href="tel:+254113325179" className="text-lg font-bold text-[#000080] hover:underline block">+254113325179</a>
               <a href="tel:+254754897775" className="text-lg font-bold text-[#000080] hover:underline block">+254754897775</a>
+              <a href="tel:+254794897552" className="text-lg font-bold text-[#000080] hover:underline block">+254794897552</a>
             </div>
           </div>
           

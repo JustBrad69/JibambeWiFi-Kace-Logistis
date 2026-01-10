@@ -30,8 +30,12 @@ const Footer = () => {
             <h2 className="text-lg font-semibold mb-4">Contact Information</h2>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <Phone className="h-5 w-5 text-[#89CFF0] mr-2 mt-0.5" />
-                <span>0707374749</span>
+                <Phone className="h-5 w-5 text-[#89CFF0] mr-2 mt-0.5 flex-shrink-0" />
+                <div className="flex flex-col space-y-1">
+                  <a href="tel:+254113325179" className="hover:text-white transition-colors">+254113325179</a>
+                  <a href="tel:+254754897775" className="hover:text-white transition-colors">+254754897775</a>
+                  <a href="tel:+254794897552" className="hover:text-white transition-colors">+254794897552</a>
+                </div>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-[#89CFF0] mr-2 mt-0.5" />
