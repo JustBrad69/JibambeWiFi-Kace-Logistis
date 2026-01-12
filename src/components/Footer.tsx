@@ -21,6 +21,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#packages" className="text-[#89CFF0] hover:text-white transition-colors">Packages</a></li>
               <li><a href="#coverage" className="text-[#89CFF0] hover:text-white transition-colors">Coverage Areas</a></li>
+              <li><a href="#payment" className="text-[#89CFF0] hover:text-white transition-colors">Payment Information</a></li>
               <li><button onClick={() => document.getElementById('help-support-button')?.click()} className="text-[#89CFF0] hover:text-white transition-colors">Help & Support</button></li>
             </ul>
           </div>

@@ -45,7 +45,7 @@ const Header = () => {
               <a href="#packages" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Packages</a>
               <a href="#coverage" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Coverage</a>
               <a href="#payment" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Payment</a>
-              <a href="tel:0707374749" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Call Us</a>
+              <a href="tel:+254113325179" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">Call Us</a>
             </nav>
           </div>
           
@@ -85,8 +85,8 @@ const Header = () => {
               >
                 Payment
               </a>
-              <a 
-                href="tel:0707374749" 
+              <a
+                href="tel:+254113325179"
                 className="text-gray-700 hover:text-blue-900 font-medium transition-colors"
                 onClick={toggleMenu}
               >
