@@ -21,7 +21,6 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#packages" className="text-[#89CFF0] hover:text-white transition-colors">Packages</a></li>
               <li><a href="#coverage" className="text-[#89CFF0] hover:text-white transition-colors">Coverage Areas</a></li>
-              <li><a href="#payment" className="text-[#89CFF0] hover:text-white transition-colors">Payment Information</a></li>
               <li><button onClick={() => document.getElementById('help-support-button')?.click()} className="text-[#89CFF0] hover:text-white transition-colors">Help & Support</button></li>
             </ul>
           </div>
@@ -34,7 +33,6 @@ const Footer = () => {
                 <div className="flex flex-col space-y-1">
                   <a href="tel:+254113325179" className="hover:text-white transition-colors">+254113325179</a>
                   <a href="tel:+254754897775" className="hover:text-white transition-colors">+254754897775</a>
-                  <a href="tel:+254794897552" className="hover:text-white transition-colors">+254794897552</a>
                 </div>
               </li>
               <li className="flex items-start">
